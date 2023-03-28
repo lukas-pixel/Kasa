@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home/index";
 import Propos from "./pages/Propos";
 import Error from "./components/Error";
-import Footer from "./components/Footer/index"
+import Footer from "./components/Footer"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

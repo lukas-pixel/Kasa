@@ -10,6 +10,9 @@ const StyledLink = styled(Link)`
     text-align: center;
     Font-family: 'Montserrat';
     font-size: 24px;
+    :hover {
+        text-decoration: underline;
+    }
 `
 
 const HomeLogo = styled.img`

@@ -27,8 +27,10 @@ function Header() {
     return (
         <NavContainer>
             <HomeLogo src={logo} alt="Logo Kasa" />
-            <StyledLink to="/">Accueil</StyledLink>
-            <StyledLink to="/propos">A Propos</StyledLink>
+            <div>
+                <StyledLink to="/">Accueil</StyledLink>
+                <StyledLink to="/propos">A Propos</StyledLink>
+            </div>
         </NavContainer>
     )
 }

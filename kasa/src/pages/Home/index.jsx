@@ -1,7 +1,9 @@
+import Banner from '../../components/Banner/index'
+
 function Home() {
     return (
         <div>
-            <h1>Home de Kasa</h1>
+            <Banner />
         </div>
     )
 }

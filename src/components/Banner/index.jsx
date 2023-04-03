@@ -6,21 +6,18 @@ const ContainerBanner = styled.div`
     background-image: url("${IMG}");
     height: 223px;
     border-radius: 25px;
-`
-const ContainerBannerText = styled.div`
-
-`
-
-const BannerText = styled.h1`
-    Color: ${colors.primary}
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    Color: ${colors.secondary}
 `
 
 function Banner() {
     return (
         <ContainerBanner>
-            <ContainerBannerText>
-                <BannerText>Chez vous, partout et ailleurs</BannerText>
-            </ContainerBannerText>
+            <h1>Chez vous, partout et ailleurs</h1>
         </ContainerBanner>
     )
 }

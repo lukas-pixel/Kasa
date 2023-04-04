@@ -9,8 +9,7 @@ const ContainerBanner = styled.div`
     background-position: center;
     background-size: cover;
     text-align: center;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin: 0 50px 0 50px;
     Color: ${colors.White}
 `
 

@@ -11,7 +11,7 @@ const ContainerBanner = styled.div`
     text-align: center;
     margin-right: 50px;
     margin-left: 50px;
-    Color: ${colors.secondary}
+    Color: ${colors.White}
 `
 
 function Banner() {

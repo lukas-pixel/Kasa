@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import colors from '../../style/colors'
 
 const FooterContainer = styled.div`
-    background-color: ${colors.tertiary};
+    background-color: ${colors.Black};
     text-align: center;
     padding: 20px 0px 20px 0px
 `
@@ -13,7 +13,7 @@ const FooterLogo = styled.img`
 `
 
 const FooterText = styled.h2`
-    color: ${colors.secondary};
+    color: ${colors.White};
 `
 
 function Footer() {

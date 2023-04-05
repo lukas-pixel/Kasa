@@ -1,9 +1,11 @@
-function Propos() {
+import AboutBanner from "../../components/AboutBanner"
+import DropDownAbout from "../../components/DropDownAbout/index"
+
+export default function Propos() {
     return (
         <div>
-            <h1>Propos</h1>
+            <AboutBanner />
+            <DropDownAbout />
         </div>
     )
 }
-
-export default Propos

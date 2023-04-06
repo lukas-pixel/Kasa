@@ -5,7 +5,8 @@ import colors from '../../style/colors'
 const FooterContainer = styled.div`
     background-color: ${colors.Black};
     text-align: center;
-    padding: 20px 0px 20px 0px
+    padding: 20px 0px 20px 0px;
+    margin-top: 30px;;
 `
 
 const FooterLogo = styled.img`

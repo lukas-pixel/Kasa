@@ -1,11 +1,11 @@
 import AboutBanner from "../../components/AboutBanner"
-import DropDownAbout from "../../components/DropDownAbout/index"
+import Collapse from "../../components/Collapse/index"
 
 export default function Propos() {
     return (
         <div>
             <AboutBanner />
-            <DropDownAbout />
+            <Collapse />
         </div>
     )
 }

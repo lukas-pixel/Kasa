@@ -6,7 +6,7 @@ const ContainerImg = styled.div`
     height: 223px;
     background-color: ${colors.Black};
     border-radius: 25px;
-    margin: 0 50px 0 50px;
+    margin: 0 50px 30px 50px;
 `
 
 const AboutImg = styled.div`

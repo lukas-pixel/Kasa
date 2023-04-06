@@ -1,0 +1,43 @@
+.ContainerDropDown {
+    width: auto;
+    margin: 0 209px 0 209px;
+    display: flex;
+    flex-direction: column;
+}
+
+.DropBtn {
+    border-radius: 5px;
+    font-size: 24px;
+    margin: 10px 0 0 0;
+    padding: 6px 6px 7px 18px;
+    background-color: #FF6060;
+    border: none;
+    color: #FFF;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerDescription {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .2s ease-in;
+}
+
+.open .ContainerDescription {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    border-radius: 5px;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    padding: 36px 27px 19px 18px;
+    font-size: 20px;
+    text-align: start;
+}
+
+.open .imgFleche {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="defer" src="React%20App_fichiers/bundle.js"></script><style>/* montserrat-cyrillic-ext-400-normal*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(http://localhost:3000/static/media/montserrat-cyrillic-ext-400-normal.bbf9e820a2563aac0d8b.woff2) format('woff2'), url(http://localhost:3000/static/media/montserrat-all-400-normal.327fab0afc997a2d9b16.woff) format('woff');
+  unicode-range: U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;
+}
+/* montserrat-cyrillic-400-normal*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(http://localhost:3000/static/media/montserrat-cyrillic-400-normal.e5c5c19c23e370a342c8.woff2) format('woff2'), url(http://localhost:3000/static/media/montserrat-all-400-normal.327fab0afc997a2d9b16.woff) format('woff');
+  unicode-range: U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;
+}
+/* montserrat-vietnamese-400-normal*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(http://localhost:3000/static/media/montserrat-vietnamese-400-normal.8f3f4c99eb0eeb5990f1.woff2) format('woff2'), url(http://localhost:3000/static/media/montserrat-all-400-normal.327fab0afc997a2d9b16.woff) format('woff');
+  unicode-range: U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB;
+}
+/* montserrat-latin-ext-400-normal*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(http://localhost:3000/static/media/montserrat-latin-ext-400-normal.0204ec08a4b574088f02.woff2) format('woff2'), url(http://localhost:3000/static/media/montserrat-all-400-normal.327fab0afc997a2d9b16.woff) format('woff');
+  unicode-range: U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+/* montserrat-latin-400-normal*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(http://localhost:3000/static/media/montserrat-latin-400-normal.acb6629fe45c43ad5d8b.woff2) format('woff2'), url(http://localhost:3000/static/media/montserrat-all-400-normal.327fab0afc997a2d9b16.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9AZm9udHNvdXJjZS9tb250c2VycmF0L2luZGV4LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxzQ0FBc0M7QUFDdEM7RUFDRSx5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsb0hBQTBJO0VBQzFJLGlGQUFpRjtBQUNuRjtBQUNBLGtDQUFrQztBQUNsQztFQUNFLHlCQUF5QjtFQUN6QixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixvSEFBc0k7RUFDdEksZ0VBQWdFO0FBQ2xFO0FBQ0Esb0NBQW9DO0FBQ3BDO0VBQ0UseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLG9IQUF3STtFQUN4SSx5R0FBeUc7QUFDM0c7QUFDQSxtQ0FBbUM7QUFDbkM7RUFDRSx5QkFBeUI7RUFDekIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsb0hBQXVJO0VBQ3ZJLDJHQUEyRztBQUM3RztBQUNBLCtCQUErQjtBQUMvQjtFQUNFLHlCQUF5QjtFQUN6QixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixvSEFBbUk7RUFDbkkseUpBQXlKO0FBQzNKIiwic291cmNlc0NvbnRlbnQiOlsiLyogbW9udHNlcnJhdC1jeXJpbGxpYy1leHQtNDAwLW5vcm1hbCovXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdNb250c2VycmF0JztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LWRpc3BsYXk6IHN3YXA7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIHNyYzogdXJsKCcuL2ZpbGVzL21vbnRzZXJyYXQtY3lyaWxsaWMtZXh0LTQwMC1ub3JtYWwud29mZjInKSBmb3JtYXQoJ3dvZmYyJyksIHVybCgnLi9maWxlcy9tb250c2VycmF0LWFsbC00MDAtbm9ybWFsLndvZmYnKSBmb3JtYXQoJ3dvZmYnKTtcbiAgdW5pY29kZS1yYW5nZTogVSswNDYwLTA1MkYsVSsxQzgwLTFDODgsVSsyMEI0LFUrMkRFMC0yREZGLFUrQTY0MC1BNjlGLFUrRkUyRS1GRTJGO1xufVxuLyogbW9udHNlcnJhdC1jeXJpbGxpYy00MDAtbm9ybWFsKi9cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ01vbnRzZXJyYXQnO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtZGlzcGxheTogc3dhcDtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgc3JjOiB1cmwoJy4vZmlsZXMvbW9udHNlcnJhdC1jeXJpbGxpYy00MDAtbm9ybWFsLndvZmYyJykgZm9ybWF0KCd3b2ZmMicpLCB1cmwoJy4vZmlsZXMvbW9udHNlcnJhdC1hbGwtNDAwLW5vcm1hbC53b2ZmJykgZm9ybWF0KCd3b2ZmJyk7XG4gIHVuaWNvZGUtcmFuZ2U6IFUrMDMwMSxVKzA0MDAtMDQ1RixVKzA0OTAtMDQ5MSxVKzA0QjAtMDRCMSxVKzIxMTY7XG59XG4vKiBtb250c2VycmF0LXZpZXRuYW1lc2UtNDAwLW5vcm1hbCovXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdNb250c2VycmF0JztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LWRpc3BsYXk6IHN3YXA7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIHNyYzogdXJsKCcuL2ZpbGVzL21vbnRzZXJyYXQtdmlldG5hbWVzZS00MDAtbm9ybWFsLndvZmYyJykgZm9ybWF0KCd3b2ZmMicpLCB1cmwoJy4vZmlsZXMvbW9udHNlcnJhdC1hbGwtNDAwLW5vcm1hbC53b2ZmJykgZm9ybWF0KCd3b2ZmJyk7XG4gIHVuaWNvZGUtcmFuZ2U6IFUrMDEwMi0wMTAzLFUrMDExMC0wMTExLFUrMDEyOC0wMTI5LFUrMDE2OC0wMTY5LFUrMDFBMC0wMUExLFUrMDFBRi0wMUIwLFUrMUVBMC0xRUY5LFUrMjBBQjtcbn1cbi8qIG1vbnRzZXJyYXQtbGF0aW4tZXh0LTQwMC1ub3JtYWwqL1xuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiAnTW9udHNlcnJhdCc7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgZm9udC1kaXNwbGF5OiBzd2FwO1xuICBmb250LXdlaWdodDogNDAwO1xuICBzcmM6IHVybCgnLi9maWxlcy9tb250c2VycmF0LWxhdGluLWV4dC00MDAtbm9ybWFsLndvZmYyJykgZm9ybWF0KCd3b2ZmMicpLCB1cmwoJy4vZmlsZXMvbW9udHNlcnJhdC1hbGwtNDAwLW5vcm1hbC53b2ZmJykgZm9ybWF0KCd3b2ZmJyk7XG4gIHVuaWNvZGUtcmFuZ2U6IFUrMDEwMC0wMjRGLFUrMDI1OSxVKzFFMDAtMUVGRixVKzIwMjAsVSsyMEEwLTIwQUIsVSsyMEFELTIwQ0YsVSsyMTEzLFUrMkM2MC0yQzdGLFUrQTcyMC1BN0ZGO1xufVxuLyogbW9udHNlcnJhdC1sYXRpbi00MDAtbm9ybWFsKi9cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ01vbnRzZXJyYXQnO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtZGlzcGxheTogc3dhcDtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgc3JjOiB1cmwoJy4vZmlsZXMvbW9udHNlcnJhdC1sYXRpbi00MDAtbm9ybWFsLndvZmYyJykgZm9ybWF0KCd3b2ZmMicpLCB1cmwoJy4vZmlsZXMvbW9udHNlcnJhdC1hbGwtNDAwLW5vcm1hbC53b2ZmJykgZm9ybWF0KCd3b2ZmJyk7XG4gIHVuaWNvZGUtcmFuZ2U6IFUrMDAwMC0wMEZGLFUrMDEzMSxVKzAxNTItMDE1MyxVKzAyQkItMDJCQyxVKzAyQzYsVSswMkRBLFUrMDJEQyxVKzIwMDAtMjA2RixVKzIwNzQsVSsyMEFDLFUrMjEyMixVKzIxOTEsVSsyMTkzLFUrMjIxMixVKzIyMTUsVStGRUZGLFUrRkZGRDtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.ContainerDropDown {
+    width: auto;
+    margin: 0 209px 0 209px;
+    display: flex;
+    flex-direction: column;
+}
+
+.DropBtn {
+    border-radius: 5px;
+    font-size: 24px;
+    margin: 10px 0 0 0;
+    padding: 6px 6px 7px 18px;
+    background-color: #FF6060;
+    border: none;
+    color: #FFF;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerDescription {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .2s ease-in;
+}
+
+.open .ContainerDescription {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    border-radius: 5px;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    padding: 36px 27px 19px 18px;
+    font-size: 20px;
+    text-align: start;
+}
+
+.open .imgFleche {
+    transform: rotate(180deg);
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL0NvbGxhcHNlL0NvbGxhcHNlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7SUFDWCx1QkFBdUI7SUFDdkIsYUFBYTtJQUNiLHNCQUFzQjtBQUMxQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLHlCQUF5QjtJQUN6Qix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFdBQVc7SUFDWCxpQkFBaUI7SUFDakIsYUFBYTtJQUNiLDhCQUE4QjtBQUNsQzs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixTQUFTO0lBQ1QsVUFBVTtJQUNWLGdCQUFnQjtJQUNoQiwyQkFBMkI7QUFDL0I7O0FBRUE7SUFDSSxtQkFBbUI7SUFDbkIsVUFBVTtJQUNWLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIseUJBQXlCO0lBQ3pCLGNBQWM7SUFDZCw0QkFBNEI7SUFDNUIsZUFBZTtJQUNmLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLHlCQUF5QjtBQUM3QiIsInNvdXJjZXNDb250ZW50IjpbIi5Db250YWluZXJEcm9wRG93biB7XG4gICAgd2lkdGg6IGF1dG87XG4gICAgbWFyZ2luOiAwIDIwOXB4IDAgMjA5cHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuXG4uRHJvcEJ0biB7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIGZvbnQtc2l6ZTogMjRweDtcbiAgICBtYXJnaW46IDEwcHggMCAwIDA7XG4gICAgcGFkZGluZzogNnB4IDZweCA3cHggMThweDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRkY2MDYwO1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBjb2xvcjogI0ZGRjtcbiAgICB0ZXh0LWFsaWduOiBzdGFydDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcbn1cblxuLkNvbnRhaW5lckRlc2NyaXB0aW9uIHtcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gICAgaGVpZ2h0OiAwO1xuICAgIG9wYWNpdHk6IDA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0cmFuc2l0aW9uOiBhbGwgLjJzIGVhc2UtaW47XG59XG5cbi5vcGVuIC5Db250YWluZXJEZXNjcmlwdGlvbiB7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgICBvcGFjaXR5OiAxO1xuICAgIGhlaWdodDogYXV0bztcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y2RjZGNjtcbiAgICBjb2xvcjogI0ZGNjA2MDtcbiAgICBwYWRkaW5nOiAzNnB4IDI3cHggMTlweCAxOHB4O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICB0ZXh0LWFsaWduOiBzdGFydDtcbn1cblxuLm9wZW4gLmltZ0ZsZWNoZSB7XG4gICAgdHJhbnNmb3JtOiByb3RhdGUoMTgwZGVnKTtcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style data-styled="active" data-styled-version="5.3.9"></style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><nav class="sc-dmqHEX dwhmIB"><img src="data:image/png;base64,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" alt="Logo Kasa" class="sc-gueYoa fefOWM"><div><a class="sc-beqWaB cKGgOB" href="http://localhost:3000/">Accueil</a><a class="sc-beqWaB cKGgOB" href="http://localhost:3000/propos">A Propos</a></div></nav><div><div class="sc-hLseeU cfFCXL"><div class="sc-eDDNvR gdPdIb" style="z-index: 10;position: absolute;"></div><h1>Chez vous, partout et ailleurs</h1></div><article class="sc-jTrPJq bAWPlR"><div class="sc-gLDzan laSuAY"><a style="text-decoration: none;" href="http://localhost:3000/location/c67ab8a7"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Appartement cosy</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/b9123946"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Magnifique appartement proche Canal Saint Martin</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/46d188c5"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-2-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Studio de charme - Buttes Chaumont</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/7af00cd6"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Nid douillet au coeur du 11ème</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/0979876d"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Appartement de Standing - 10e</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/f72a452f"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-5-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Studio d'artiste</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/b4c67936"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Cheap - Studio 18ème</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/bc6f7112"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-7-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Superbe appartement proche Tour Eiffel</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/cb2f9222"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Suite familiale</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/d60ca600"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-9-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Appartement moderne sur parc</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/2cf259e1"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Charmant Studio Marais</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/5323c29b"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-11-3.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Studio fonctionnel République</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/af6d2d48"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-12-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Bungalow dans la forêt</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/7cbb378e"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-13-2.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Grande Maison proche banlieue</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/ba55a0cc"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Maison T5 - Le Vésinet</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/1e181317"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-15-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Loft de Luxe à la Défense</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/1e180563"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Charmant apt aux portes de Paris</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/2139a317"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-17-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Cheap - Chambre Paris 20</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/6ff132c6"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-18-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Charmant studio</h2></figure></a><a style="text-decoration: none;" href="http://localhost:3000/location/cb02d69b"><figure style="background-image: url(&quot;https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg&quot;);" class="sc-iAEyYk hcCsHU"><h2 class="sc-fsQiph hcJmFe">Magnifique appartement Rivoli</h2></figure></a></div></article></div><div class="sc-fbJfA eZdqJP"><img src="data:image/png;base64,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" alt="Logo Kasa" class="sc-brKeYL kjlDLA"><h2 class="sc-ktEKTO juuHxL">© 2020 Kasa. All rights reserved</h2></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>

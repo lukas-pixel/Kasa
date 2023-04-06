@@ -8,25 +8,27 @@ const ErrorContainer = styled.div`
 `
 
 const ErrorLogo = styled.img`
-    height: 263px;
-    width: 597px;
+    height: 260px;
+    width: auto;
+    margin: 95px 0 30px 0;
 `
+
+const ErrorTxt = styled.h2`
+    margin: 30px 0 180 0;
+    color: ${colors.primary};
+`
+
 const ErrorLink = styled(Link)`
+    margin-bottom: 30px;
     color: ${colors.primary};
 `
 
 function Error() {
     return (
         <ErrorContainer>
-            <div>
-                <ErrorLogo src={LogoError} alt="404 Logo" />
-            </div>
-            <div>
-                <h2>Oups! La page que vous demandez n'existe pas.</h2>
-            </div>
-            <div>
-                <ErrorLink to='/'>Retourner sur la page d'accueil</ErrorLink>
-            </div>
+            <ErrorLogo src={LogoError} alt="404 Logo" />
+            <ErrorTxt>Oups! La page que vous demandez n'existe pas.</ErrorTxt>
+            <ErrorLink to='/'>Retourner sur la page d'accueil</ErrorLink>
         </ErrorContainer>
     )
 }

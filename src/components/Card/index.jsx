@@ -1,19 +1,5 @@
 import styled from 'styled-components'
 import colors from '../../style/colors'
-import data from '../../data/logements.json'
-import { Link } from 'react-router-dom'
-
-const ContainerGallery = styled.article`
-    background-color: ${colors.secondary};
-    border-radius: 25px;
-    margin: 43px 50px 43px 50px;
-`
-
-const Cards = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-` 
 
 const Figure = styled.figure`
     height: 340px;
@@ -35,19 +21,11 @@ const TextLocation = styled.h2`
     color: ${colors.White};
 `
 
-function Card() {
+function Card({id, cover, title}) {
     return (
-        <ContainerGallery>
-            <Cards>
-                {data.map((location) => (
-                    <Link to={`/location/${location.id}`} key={location.id} style={{textDecoration: `none`}} >
-                        <Figure key={location.id} style={{backgroundImage: `url(${location.cover})`}}>
-                            <TextLocation>{location.title}</TextLocation>
-                        </Figure>
-                    </Link>
-                ))} 
-            </Cards>
-        </ContainerGallery>
+        <Figure key={id} style={{backgroundImage: `url(${cover})`}}>
+            <TextLocation>{title}</TextLocation>
+        </Figure>
     )
 }
 

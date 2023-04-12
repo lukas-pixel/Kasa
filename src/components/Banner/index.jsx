@@ -1,22 +1,23 @@
 import styled from 'styled-components'
 import colors from '../../style/colors'
-import IMG from '../../assets/IMG.png'
 
 const ContainerBanner = styled.div`
-    background-image: url("${IMG}");
     height: 223px;
     border-radius: 25px;
     background-position: center;
     background-size: cover;
     text-align: center;
-    margin: 0 50px 0 50px;
-    Color: ${colors.White}
 `
 
-function Banner() {
+const TextBanner = styled.h1`
+    color: ${colors.White};
+    text-align: center;
+`
+
+function Banner({imgPaysage}) {
     return (
-        <ContainerBanner>
-            <h1>Chez vous, partout et ailleurs</h1>
+        <ContainerBanner style={{backgroundImage: `url(${imgPaysage})`}}>
+            <TextBanner>Chez vous, partout et ailleurs</TextBanner>
         </ContainerBanner>
     )
 }

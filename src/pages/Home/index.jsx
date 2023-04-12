@@ -2,8 +2,17 @@ import styled from 'styled-components'
 import colors from '../../style/colors'
 import { Link } from 'react-router-dom'
 import Banner from '../../components/Banner/index'
+import imgPaysage from '../../assets/IMG.png'
 import Card from '../../components/Card/index'
 import dataCard from '../../data/logements.json'
+
+const ContainerBanner = styled.div`
+    background-color: ${colors.Black};
+    height: 223px;
+    border-radius: 25px;
+    margin: 0 50px 0 50px;
+    Color: ${colors.White}
+`
 
 const ContainerGallery = styled.article`
     background-color: ${colors.secondary};
@@ -21,7 +30,9 @@ function Home() {
 
     return (
         <div>
-            <Banner />
+            <ContainerBanner>
+                <Banner imgPaysage={imgPaysage} />
+            </ContainerBanner>
             <ContainerGallery>
                 <Cards>
                     {dataCard.map((location) => (

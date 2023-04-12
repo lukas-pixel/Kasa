@@ -1,9 +1,10 @@
 import "./Collapse.css"
-import dataAbout from "../../data/About.json"
-import fleche from "../../assets/Vector.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-export default function DropDownAbout() {
+function Collapse({title, description}) {
 
     const [open, setOpen] = useState(false);
 
@@ -13,19 +14,19 @@ export default function DropDownAbout() {
 
     return (
         <div>
-            {dataAbout.map((about) => (
-                <div className={`ContainerDropDown ${open && "open"}`}>
+            <div className={`ContainerDropDown ${open && "open"}`}>
                     <button className="DropBtn" type="button" onClick={handleClick}>
-                        <div>{about.title}</div>
+                        <div>{title}</div>
                         <div>
-                            <img className="imgFleche" src={fleche} alt="Fleche" />
+                        {open ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}
                         </div>
                     </button>
                     <div className="ContainerDescription">
-                        <p>{about.description}</p>
+                        <p>{description}</p>
                     </div>
                 </div>
-            ))}
         </div>
     )
 } 
+
+export default Collapse

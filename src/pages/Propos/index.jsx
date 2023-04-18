@@ -6,9 +6,11 @@ export default function Propos() {
     return (
         <div>
             <AboutBanner />
-            {data.map((about) => (
-                <Collapse key={about.id} title={about.title} description={about.description} />
-            ))}
+            <div style={{margin: `0 210px`}}>
+                {data.map((about) => (
+                    <Collapse key={about.id} title={about.title} content={about.description} />
+                ))}
+            </div>
         </div>
     )
 }

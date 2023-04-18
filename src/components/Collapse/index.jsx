@@ -4,7 +4,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-function Collapse({title, description}) {
+function Collapse({title, content}) {
 
     const [open, setOpen] = useState(false);
 
@@ -14,15 +14,15 @@ function Collapse({title, description}) {
 
     return (
         <div>
-            <div className={`ContainerDropDown ${open && "open"}`}>
-                    <button className="DropBtn" type="button" onClick={handleClick}>
+            <div className={`ContainerCollapse ${open && "open"}`}>
+                    <button className="CollapseBtn" type="button" onClick={handleClick}>
                         <div>{title}</div>
                         <div>
                         {open ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}
                         </div>
                     </button>
-                    <div className="ContainerDescription">
-                        <p>{description}</p>
+                    <div className="ContainerContent">
+                        {title === "Équipements" ? <ul>{content.map((item) => <li>{item}</li>)}</ul> : <p>{content}</p>}
                     </div>
                 </div>
         </div>

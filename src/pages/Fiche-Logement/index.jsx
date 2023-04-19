@@ -6,13 +6,26 @@ import Error from '../../components/Error/index'
 import RatingStar from '../../components/RatingStar'
 import Collapse from '../../components/Collapse'
 
+const ContainerTitleLocation = styled.div`
+    color: ${colors.primary};
+    margin-left: 50px;
+`
+
+const TextTitle = styled.h2`
+    margin-bottom: 5px;
+`
+
+const TextLocation = styled.h4`
+    margin-top: 0px;
+`
+
 const ContainerTagRating = styled.div`
     display:flex;
     justify-content: space-between;
 `
 
 const ContainerTag = styled.div`
-    margin: 0 50px;
+    margin: 20px 50px;
 `
 
 const TextTag = styled.span`
@@ -29,7 +42,7 @@ const TextTag = styled.span`
 `
 
 const ContainerStar = styled.div`
-margin: 0 50px;
+margin: 20px 50px 30px 50px;
 `
 
 const ContainerCollapse = styled.div`
@@ -54,6 +67,12 @@ function FicheLogement() {
             <div>
                 Carousel
             </div>
+
+            
+            <ContainerTitleLocation>
+                <TextTitle>{location.title}</TextTitle>
+                <TextLocation>{location.location}</TextLocation>
+            </ContainerTitleLocation>
 
             <ContainerTagRating>
                 <ContainerTag>

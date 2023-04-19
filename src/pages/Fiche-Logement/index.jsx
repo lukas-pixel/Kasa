@@ -1,7 +1,26 @@
 import { useParams } from 'react-router-dom'
 import data from '../../data/logements.json'
-import Collapse from '../../components/Collapse'
 import styled from 'styled-components'
+import colors from '../../style/colors'
+import Carrousel from '../../components/Carousel'
+import Collapse from '../../components/Collapse'
+
+const ContainerTag = styled.div`
+    margin: 0 50px;
+`
+
+const TextTag = styled.span`
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid ${colors.primary};
+    margin: 0 10px 0 0;
+    padding: 2px 20px;
+    text-align: center;
+    font-size: 15px;
+    background-color: ${colors.primary};
+    color: ${colors.White};
+`
 
 const ContainerCollapse = styled.div`
     display: grid;
@@ -18,6 +37,16 @@ function FicheLogement() {
 
     return (
         <div>
+            <div>
+                <Carrousel picture={location.pictures}/>
+            </div>
+
+            <ContainerTag>
+                {location.tags.map((tag) => (
+                    <TextTag key={tag}>{tag}</TextTag>
+                ))}
+            </ContainerTag>
+
             <ContainerCollapse>
                 <Collapse key={location.id} title="Description" content={location.description} />
                 <Collapse key={location.id} title="Équipements" content={location.equipments} />

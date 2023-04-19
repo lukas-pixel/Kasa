@@ -2,8 +2,14 @@ import { useParams } from 'react-router-dom'
 import data from '../../data/logements.json'
 import styled from 'styled-components'
 import colors from '../../style/colors'
-import Carrousel from '../../components/Carousel'
+import Error from '../../components/Error/index'
+import RatingStar from '../../components/RatingStar'
 import Collapse from '../../components/Collapse'
+
+const ContainerTagRating = styled.div`
+    display:flex;
+    justify-content: space-between;
+`
 
 const ContainerTag = styled.div`
     margin: 0 50px;
@@ -22,6 +28,10 @@ const TextTag = styled.span`
     color: ${colors.White};
 `
 
+const ContainerStar = styled.div`
+margin: 0 50px;
+`
+
 const ContainerCollapse = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -35,17 +45,26 @@ function FicheLogement() {
     const { id } = useParams()
     const location = data.find((loc) => loc.id === id)
 
+    if (!data) {
+        return <Error />
+    }
+
     return (
         <div>
             <div>
-                <Carrousel picture={location.pictures}/>
+                Carousel
             </div>
 
-            <ContainerTag>
-                {location.tags.map((tag) => (
-                    <TextTag key={tag}>{tag}</TextTag>
-                ))}
-            </ContainerTag>
+            <ContainerTagRating>
+                <ContainerTag>
+                    {location.tags.map((tag) => (
+                        <TextTag key={tag}>{tag}</TextTag>
+                    ))}
+                </ContainerTag>
+                <ContainerStar>
+                    <RatingStar rating={location.rating}/>
+                </ContainerStar>
+            </ContainerTagRating>
 
             <ContainerCollapse>
                 <Collapse key={location.id} title="Description" content={location.description} />

@@ -3,8 +3,13 @@ import data from '../../data/logements.json'
 import styled from 'styled-components'
 import colors from '../../style/colors'
 import Error from '../../components/Error/index'
+import Slideshow from '../../components/Slideshow'
 import RatingStar from '../../components/RatingStar'
 import Collapse from '../../components/Collapse'
+
+const ContainerSlideshow = styled.div`
+    margin-bottom: 30px;
+`
 
 const ContainerTitleHost = styled.div`
     display: flex;
@@ -90,9 +95,9 @@ function FicheLogement() {
 
     return (
         <div>
-            <div>
-                Carousel
-            </div>
+            <ContainerSlideshow>
+                <Slideshow  pictures={location.pictures}/>
+            </ContainerSlideshow>
 
             <ContainerTitleHost>
                 <ContainerTitleLocation>

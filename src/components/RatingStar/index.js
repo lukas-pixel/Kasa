@@ -2,11 +2,13 @@ import React from "react"
 import starFilled from '../../assets/star-filled.png'
 import starEmpty from '../../assets/star-empty.png'
 
-function RatingStar(rating) {
+function RatingStar(data) {
     const starArray = []
 
+    console.log('MARINE => ', data.rating)
+
     for(let i=0; i < 5; i++) {
-        if ( i < rating ) {
+        if ( i < data.rating ) {
             starArray.push( <img src={starFilled} key="" alt="" /> )
         } else {
             starArray.push( <img src={starEmpty} key="" alt="" /> )

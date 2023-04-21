@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import colors from '../../style/colors'
 
 const ContainerBanner = styled.div`
+    position: relative;
     height: 223px;
     border-radius: 25px;
     background-position: center;
@@ -10,6 +11,9 @@ const ContainerBanner = styled.div`
 `
 
 const TextBanner = styled.h1`
+    position: absolute;
+    top: 30%;
+    left: 30%;
     color: ${colors.White};
     text-align: center;
 `

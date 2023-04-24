@@ -7,7 +7,7 @@ export default function Propos() {
     return (
         <div>
             <AboutBanner />
-            <div className="ContainerCollapse">
+            <div className="ContainerAboutContenu">
                 {data.map((about) => (
                     <Collapse key={about.id} title={about.title} content={about.description} />
                 ))}

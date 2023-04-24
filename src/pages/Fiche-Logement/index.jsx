@@ -3,11 +3,11 @@ import data from '../../data/logements.json'
 import styled from 'styled-components'
 import colors from '../../style/colors'
 import Error from '../../components/Error/index'
-import Slideshow from '../../components/Slideshow'
+import Gallery from '../../components/Gallery/index'
 import RatingStar from '../../components/RatingStar'
 import Collapse from '../../components/Collapse'
 
-const ContainerSlideshow = styled.div`
+const ContainerGallery = styled.div`
     margin-bottom: 30px;
 `
 
@@ -95,9 +95,9 @@ function FicheLogement() {
 
     return (
         <div>
-            <ContainerSlideshow>
-                <Slideshow  pictures={location.pictures}/>
-            </ContainerSlideshow>
+            <ContainerGallery>
+                <Gallery  pictures={location.pictures}/>
+            </ContainerGallery>
 
             <ContainerTitleHost>
                 <ContainerTitleLocation>

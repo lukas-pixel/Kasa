@@ -1,0 +1,20 @@
+.ErrorContainer {
+    text-align: center;
+}
+
+.ErrorLogo {
+    margin: 95px 0 30px 0;
+    width: auto;
+    height: 260px;
+}
+
+.ErrorTxt {
+    margin: 30px 0 180px 0;
+    color: #ff6060;
+}
+
+@media screen and (max-width: 768px) {
+    .ErrorLogo {
+        height: 99px;
+    }
+}

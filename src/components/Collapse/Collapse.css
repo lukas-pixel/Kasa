@@ -1,20 +1,21 @@
 .ContainerCollapse {
-    width: auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+    width: auto;
 }
 
 .CollapseBtn {
-    border-radius: 5px;
-    font-size: 24px;
-    margin: 10px 0 0 0;
-    padding: 6px 6px 7px 18px;
-    background-color: #FF6060;
-    border: none;
-    color: #FFF;
-    text-align: start;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 6px 6px 7px 18px;
+    font-size: 24px;
+    text-align: start;
+    color: #FFF;
+    background-color: #FF6060;
 }
 
 .ContainerContent {
@@ -28,11 +29,17 @@
 .open .ContainerContent {
     visibility: visible;
     opacity: 1;
-    height: auto;
     border-radius: 5px;
-    background-color: #F6F6F6;
-    color: #FF6060;
     padding: 36px 27px 19px 18px;
+    height: auto;
+    color: #FF6060;
     font-size: 20px;
     text-align: start;
+    background-color: #F6F6F6;
+}
+
+@media screen and (max-width: 768px) {
+    .ContainerCollapse {
+        margin-bottom: 10px;
+    }
 }

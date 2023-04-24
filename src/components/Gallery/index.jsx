@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import './Slideshow.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 function Slideshow({ pictures }) {
     //On donne une valeur initiale de 0 à notre variable d'état.

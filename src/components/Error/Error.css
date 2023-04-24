@@ -13,6 +13,11 @@
     color: #ff6060;
 }
 
+.ErrorLink {
+    margin-bottom: 30px;
+    color: #ff6060;
+}
+
 @media screen and (max-width: 768px) {
     .ErrorLogo {
         height: 99px;

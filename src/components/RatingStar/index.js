@@ -5,8 +5,6 @@ import starEmpty from '../../assets/star-empty.png'
 function RatingStar(data) {
     const starArray = []
 
-    console.log('MARINE => ', data.rating)
-
     for(let i=0; i < 5; i++) {
         if ( i < data.rating ) {
             starArray.push( <img src={starFilled} key="" alt="" /> )

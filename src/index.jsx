@@ -17,7 +17,7 @@ root.render(
         <Header />
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/propos" element={<About />} />
+            <Route path="/about" element={<About />} />
             <Route path="*" element={<Error />} />
             <Route path="/location/:id" element={<Location />} />
           </Routes>

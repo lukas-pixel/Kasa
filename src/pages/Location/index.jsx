@@ -6,7 +6,7 @@ import Gallery from '../../components/Gallery/index'
 import RatingStar from '../../components/RatingStar'
 import Collapse from '../../components/Collapse'
 
-function FicheLogement() {
+function AccommodationSheet() {
 
     const { id } = useParams()
     const location = data.find((loc) => loc.id === id)
@@ -53,11 +53,11 @@ function FicheLogement() {
             </div>
 
             <div className='ContainerContenu'>
-                <Collapse key={location.id} title="Description" content={location.description} />
-                <Collapse key={location.id} title="Équipements" content={location.equipments} />
+                <Collapse key="1" title="Description" content={location.description} />
+                <Collapse key="2" title="Équipements" content={location.equipments} />
             </div>
         </div>
     )
 }
 
-export default FicheLogement
+export default AccommodationSheet

@@ -21,7 +21,7 @@ function Collapse({title, content}) {
                         </div>
                     </button>
                     <div className="ContainerContent">
-                        {title === "Équipements" ? <ul>{content.map((item) => <li>{item}</li>)}</ul> : <p>{content}</p>}
+                        {title === "Équipements" ? <ul>{content.map((item, index) => <li key={index}>{item}</li>)}</ul> : <p>{content}</p>}
                     </div>
                 </div>
         </div>

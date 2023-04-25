@@ -1,27 +1,10 @@
-import styled from 'styled-components'
-import colors from '../../style/colors'
-import IMG from '../../assets/IMG.png'
+import './Banner.css'
 
-const ContainerBanner = styled.div`
-    background-image: url("${IMG}");
-    height: 223px;
-    border-radius: 25px;
-`
-const ContainerBannerText = styled.div`
-
-`
-
-const BannerText = styled.h1`
-    Color: ${colors.primary}
-`
-
-function Banner() {
+function Banner({imgPaysage}) {
     return (
-        <ContainerBanner>
-            <ContainerBannerText>
-                <BannerText>Chez vous, partout et ailleurs</BannerText>
-            </ContainerBannerText>
-        </ContainerBanner>
+        <div className='ContainerBanner' style={{backgroundImage: `url(${imgPaysage})`}}>
+            <h1 className='TextBanner'>Chez vous, partout et ailleurs</h1>
+        </div>
     )
 }
 

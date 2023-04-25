@@ -1,0 +1,110 @@
+.ContainerGallery {
+    margin-bottom: 30px;
+}
+
+.ContainerTitleHost {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerTitleLocation {
+    margin-left: 50px;
+    color: #ff6060
+}
+
+.TextTitle {
+    margin: 0;
+    padding-left: 0;
+    padding-top: 0;
+    color: #ff6060;
+}
+
+.TextLocation {
+    margin-top: 0;
+}
+
+.ContainerHostDesktop {
+    display: flex;
+    margin: 0 50px;
+}
+
+.ContainerHostMobile {
+    display: none;
+}
+
+.HostText {
+    margin-right: 10px;
+    text-align: right;
+    color: #ff6060;
+}
+
+.HostPicture {
+    margin-left: 5px;
+    border-radius: 50px;
+    width: 64px;
+    height: 64px;
+}
+
+.ContainerTagRating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ContainerTag {
+    margin: 20px 50px;
+}
+
+.TextTag {
+    margin: 0 10px 0 0;
+    border: 1px solid #ff6060;
+    border-radius: 10px;
+    padding: 2px 20px;
+    width: 115px;
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+    color: #FFF;
+    background-color: #ff6060;
+}
+
+.ContainerStar {
+    margin: 20px 50px 30px 50px;
+}
+
+.ContainerContenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 70px;
+    margin: 0 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .ContainerGallery {
+        margin: 20px 20px;
+    }
+
+    .ContainerHostDesktop {
+        display: none;
+    }
+
+    .ContainerHostMobile {
+        display: contents;
+        display: flex;
+        margin: 0 50px;
+    }
+
+    .ContainerTagRating {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ContainerStarHostMobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ContainerContenu {
+        display: flex;
+        flex-direction: column;
+    }
+}

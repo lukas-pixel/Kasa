@@ -1,0 +1,9 @@
+.ContainerAboutContenu {
+    margin: 0 105px;
+}
+
+@media screen and (max-width: 768px) {
+    .ContainerAboutContenu {
+        margin: 0 10px;
+    }
+}

@@ -1,0 +1,29 @@
+#Banner {
+    position: relative;
+}
+
+.Banner-Img img {
+    width: 100%;
+    height: 223px;
+    border-radius: 25px;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.TextBanner {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 30%;
+    left: 30%;
+    color: #fff;
+    z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .TextBanner {
+        left: 20%;
+    }
+}

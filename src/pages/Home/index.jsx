@@ -1,5 +1,7 @@
 import './Home.css'
 import { Link } from 'react-router-dom'
+import Banner from '../../components/Banner'
+import ImgPaysage from '../../assets/Paysage-Home.png'
 import Card from '../../components/Card/index'
 import dataCard from '../../data/logements.json'
 
@@ -8,7 +10,7 @@ function Home() {
     return (
         <div>
             <div className='ContainerTextBanner'>
-                <h1 className='TextBanner'>Chez vous, partout et ailleurs</h1>
+                <Banner Img={ImgPaysage} title="Chez vous, partout et ailleurs"/>
             </div>
             <article className='ContainerGallery'>
                 <div className='Cards'>

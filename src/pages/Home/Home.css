@@ -1,10 +1,5 @@
-
-
-.TextBanner {
-    margin: auto;
-    text-align: center;
-    color: #fff;
-    opacity: 1;
+.ContainerTextBanner {
+    margin: 0 50px 30px 50px;
 }
 
 .ContainerGallery {
@@ -20,6 +15,9 @@
 }
 
 @media screen and (max-width: 768px) {
+    .ContainerTextBanner {
+        margin: 0 20px 10px 20px;
+    }
 
     .ContainerGallery {
         background-color: #fff;

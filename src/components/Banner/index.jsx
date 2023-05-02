@@ -6,7 +6,7 @@ function Banner(props) {
             <div className='Banner-Img'>
                 <img src={props.Img} alt="" />
             </div>
-            <h1 className='TextBanner'>Chez vous, partout et ailleurs</h1>
+            <h1 className='TextBanner'>{props.title}</h1>
         </div>
     )
 }

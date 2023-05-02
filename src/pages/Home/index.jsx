@@ -10,7 +10,7 @@ function Home() {
     return (
         <div>
             <div className='ContainerTextBanner'>
-                <Banner Img={ImgPaysage}/>
+                <Banner Img={ImgPaysage} title="Chez vous, partout et ailleurs"/>
             </div>
             <article className='ContainerGallery'>
                 <div className='Cards'>

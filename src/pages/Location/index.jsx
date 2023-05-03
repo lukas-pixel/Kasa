@@ -11,7 +11,7 @@ function AccommodationSheet() {
     const { id } = useParams()
     const location = data.find((loc) => loc.id === id)
 
-    if (!data) {
+    if (!location) {
         return <Error />
     }
 
